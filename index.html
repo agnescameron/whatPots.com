@@ -11,21 +11,85 @@
 <div class = "container"></div>
 
 <div id = "headingdiv">
-	WHATPOTS.COM<br>
+	whatpots dot com
 </div>
 
-<div id = "titlesdiv">
-	<a class="titlelink" href="colours.html"><h1>colours</h1></a>
-	<a class="titlelink" href="pots.html"><h1>pots</h1></a>
+<div id="aboutlink" onclick="toggleAbout()">
+	<a>about</a>
 </div>
 
-<div class = "mainimg">
-	<img src="images/flat.png" height= 500px;>
+<div class="aboutbox" id="aboutbox" style="display:none" onclick="toggleAbout()">
+	<div class="abouttext">
+	<p> what pots dot com is for albert to choose 2 pots that he'd like for his birthday. for each pot, he needs to choose a pot colour (left) and a pot style (right). when chosen, email agnes your pot+color choices using this handy <a href=mailto:agnescam@mit.edu><i>link</i></a></p>
+	</div>
+</div>	
+
+
+<div class="aboutbox" id="potbox" style="display:none" onclick="togglePots()">
+	<div class="abouttext">
+	<p>there are a number of styles of bowl you can have. they are thrown by agnes. for some idea of what they might look like, look at some <a href=pots.html><i>examples</i></a></p>
+	</div>
+</div>	
+
+<div class="aboutbox" id="colourbox" style="display:none" onclick="toggleColours()">
+	<div class="abouttext">
+	<p>each of these colours is made using a combination of 2 glazes. to see the names of the glaze to ask for, hover over the picture. for some idea of what they might look like, look at some <a href=pots.html><i>examples</i></a></p></p>
+	</div>
+</div>	
+
+<div id=pots>
+			<a onclick="togglePots()"><h1>pots</h1></a>
+			<img width=200px src=images/flat.png><br><br><br><br><br>
+			<img width=200px src=images/tall.png><br><br><br><br><br>
+			<img width=200px  src=images/med.png><br><br><br><br><br>
 </div>
 
-
+<div id=colours>
+			<a onclick="toggleColours()"><h1>colours</h1></a>
+			<img width=150px src=images/gunmetal_floatblue.png>
+			<img width=150px src=images/gunmetal_seagreen.png>
+			<img width=150px src=images/gunmetal_liquorice.png>
+			<img width=150px src=images/floatblue_jade.png>
+			<img width=150px src=images/jade_seagreen.png>
+			<img width=150px src=images/noxema_butterscotch.png>
+			<img width=150px src=images/white_red.png>
+			<img width=150px src=images/noxema_shino.png>
+			<img width=150px src=images/liquorice_rosey.png>
+</div>
 
 </body>
+
+<script type="text/javascript">
+	function toggleAbout() {
+    var overlay = document.getElementById("aboutbox");
+    if(overlay.style.display === "none"){
+        overlay.style.display = "block"
+    }
+    else{
+        overlay.style.display = "none"
+    }
+}	
+
+function togglePots() {
+    var overlay = document.getElementById("potbox");
+    if(overlay.style.display === "none"){
+        overlay.style.display = "block"
+    }
+    else{
+        overlay.style.display = "none"
+    }
+}	
+
+function toggleColours() {
+    var overlay = document.getElementById("colourbox");
+    if(overlay.style.display === "none"){
+        overlay.style.display = "block"
+    }
+    else{
+        overlay.style.display = "none"
+    }
+}	
+</script>
 </html>
 
 
