@@ -7,12 +7,49 @@
 <script type="text/javascript" src="wrap.js"></script>
 </head>
 <body>
-		<div class=imgs>
-			<h1>Pots</h1>
-			<img width=150px src=images/flat.png>
-			<img width=150px src=images/tall.png>
-			<img width=150px src=images/med.png>
+
+<div id = "headingdiv">
+	<a href="index.html">whatpots dot com</a>
+</div>
+
+<div id="aboutlink" onclick="toggleAbout()">
+	<a>examples</a>
+</div>
+
+
+<div class="aboutbox" id="aboutbox" style="display:none" onclick="toggleAbout()">
+	<div class="abouttext">
+	<p> these are some pots i made already so you know what they look like. i'm better than when i made these though, so they'll be: more big + even nicer.</p>
+	</div>
+</div>	
+
+		<div class=examplepots>
+			<img width=200px src=images/liquorice_gunmetal_flat.jpg>
+			<img width=200px src=images/jade_seagreen_regular.png>
+			<img width=200px src=images/red_white_tall.png>
+			<img width=200px src=images/liquorice_rosey_regular.png>			
+			<img width=200px src=images/floating_gunmetal_regular.png>
+		</div>
+		<div class=textboxes>
+			<div class="textbox">colour: liquorice + gunmetal <br><br> pot type: flat</div>
+			<div class="textbox"> colour: jade + sea green <br><br> pot type: regular</div>
+			<div class="textbox"> colour: white clay + red underglaze <br><br> pot type: tall (but small!)</div>
+			<div class="textbox"> colour: liquorice + rosey dawn <br><br> pot type: regular (but small!)</div>
+			<div class="textbox"> colour: floating blue + gunmetal <br><br> pot type: regular</div>
 		</div>
 
 </body>
+
+<script type="text/javascript">
+	function toggleAbout() {
+    var overlay = document.getElementById("aboutbox");
+    if(overlay.style.display === "none"){
+        overlay.style.display = "block"
+    }
+    else{
+        overlay.style.display = "none"
+    }
+}	
+
+</script>
 </html>

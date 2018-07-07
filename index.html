@@ -4,19 +4,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <script type="text/javascript" src="wrap.js"></script>
+<meta charset="UTF-8">
 </head>
 <body>
 
 <title>what pots dot com</title>
 <div class = "container"></div>
 
-<div id = "headingdiv">
-	whatpots dot com
+<div id = "headingdiv" onclick="toggleTitle()">
+	<a>whatpots dot com</a>
 </div>
 
 <div id="aboutlink" onclick="toggleAbout()">
 	<a>about</a>
 </div>
+
+
+<div class="aboutbox" id="titlebox" style="display:none" onclick="toggleAbout()">
+	<div class="abouttext">
+	<p> happy birthday dick head 🎉</p>
+	</div>
+</div>	
+
 
 <div class="aboutbox" id="aboutbox" style="display:none" onclick="toggleAbout()">
 	<div class="abouttext">
@@ -33,7 +42,7 @@
 
 <div class="aboutbox" id="colourbox" style="display:none" onclick="toggleColours()">
 	<div class="abouttext">
-	<p>each of these colours is made using a combination of 2 glazes. to see the names of the glaze to ask for, hover over the picture. for some idea of what they might look like, look at some <a href=pots.html><i>examples</i></a></p></p>
+	<p>each of these colours is made using a combination of 2 glazes. to see the names of the glaze to ask for, hover over the picture. for some idea of what they might look like, look at some <a href=pots.html><i>examples</i></a></p>
 	</div>
 </div>	
 
@@ -158,6 +167,16 @@ function togglePots() {
 
 function toggleColours() {
     var overlay = document.getElementById("colourbox");
+    if(overlay.style.display === "none"){
+        overlay.style.display = "block"
+    }
+    else{
+        overlay.style.display = "none"
+    }
+}
+
+function toggleTitle() {
+    var overlay = document.getElementById("titlebox");
     if(overlay.style.display === "none"){
         overlay.style.display = "block"
     }
