@@ -1,0 +1,146 @@
+body {
+  font-family: "ArialRoundedMTBold", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  height:100%;
+  z-index:-2;
+  animation: colorchange 30s infinite; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 30s infinite; /* Chrome and Safari */
+}
+
+@-webkit-keyframes colorchange
+    {
+      0%   {background: pink;}
+      25%  {background: violet;}
+      50%  {background: #F55E57;}
+      75%  {background: #F87CA0;}
+      100% {background: pink;}
+    }
+
+@-webkit-keyframes colorchange
+    {
+      0%   {background: pink;}
+      25%  {background: violet;}
+      50%  {background: #F55E57;}
+      75%  {background: #F87CA0;}
+      100% {background: pink;}
+  }
+
+h1{
+  font-size: 50px;
+}
+
+
+h2{
+  text-align:left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+ color: yellow;
+ text-decoration: none;
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
+#wrapper {
+  width: 902px;
+}
+
+
+#quotebox {
+  width: 400px;
+  margin-left: 40px;
+}
+
+
+#textwrapper {
+  width: 1000px;
+  padding: 20px 20px 20px;
+      text-align: justify;
+}
+
+#title {
+  font-family: "ArialRoundedMTBold", sans-serif;
+  letter-spacing: -2px;
+  margin: 0 0 10px 0;
+  padding: 6px 6px 8px;
+/*  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;*/
+/*  //line-height: 1.2;*/
+}
+
+.titlelink {
+  text-decoration: none;
+  color: white;
+}
+
+.titlelink:hover {
+ color: yellow;
+ text-decoration: none;
+}
+
+#textlink{
+    text-decoration:none;
+}
+
+.container{
+    width:600px;
+    height:600px;
+    top:100px;
+    left:350px;
+    z-index:-1;
+    overflow:hidden;
+    position:absolute;
+    background-image: url("pinkflowers.png");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+#titlesdiv{
+    left: 800px;
+    top:50px;
+    position: absolute;
+    color: white;
+    z-index:1;
+}
+
+#textdiv{
+    font-size: 20px;
+    text-align: justify;
+    left: 800px;
+    top:210px;
+    color: white;
+    position: absolute;
+    min-width: 400px;
+    max-width: 500px;
+    padding-right: 50px;
+    z-index:1;
+}
+
+
+#headingdiv{
+    left: 20px;
+    top:95px;
+    width:650px;
+    font-size: 70px;
+    line-height: 0.8;
+    color: white;
+    text-align: right;
+    position: absolute;
+    z-index:1;
+}
+
+.mainimg {
+    position: fixed;
+    overflow: hidden;
+    bottom:0;
+}
